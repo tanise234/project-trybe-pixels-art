@@ -10,4 +10,4 @@ function createPixel(altura, largura) {
     document.getElementById('pixel-board').appendChild(pulaLinha);
   }
 }
-createPixel(6, 7);
+createPixel(5, 5);
