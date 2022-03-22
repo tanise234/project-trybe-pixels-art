@@ -1,5 +1,5 @@
 body {
-    padding: 0;
+  padding: 0;
 }
 
 #title {
@@ -15,23 +15,23 @@ body {
 .color {
   display: inline-block;
   border: black solid 1px;
-  min-height: 40px;
-  min-width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
-.cor1 {
+#cor1 {
   background-color: black;
 }
 
-.cor2 {
+#cor2 {
   background-color: rgb(255, 243, 55);
 }
 
-.cor3 {
+#cor3 {
   background-color: hotpink;
 }
 
-.cor4 {
+#cor4 {
   background-color: cornflowerblue;
 }
 
@@ -48,5 +48,5 @@ body {
   border: black solid 1px;
   height: 40px;
   width: 40px;
-  padding-top: -10px;
+  margin-top: -5px;
 }
