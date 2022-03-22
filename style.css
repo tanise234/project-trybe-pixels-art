@@ -1,0 +1,43 @@
+#title {
+  background-color: rgb(177, 177, 235);
+}
+
+#color-palette {
+  background-color: chartreuse;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.color {
+  display: inline;
+  border: black solid 1px;
+  padding: 20px 28px;
+  margin: 4px;
+}
+
+.cor1 {
+  background-color: black;
+}
+.cor2 {
+  background-color: rgb(255, 243, 55);
+}
+.cor3 {
+  background-color: hotpink;
+}
+.cor4 {
+  background-color: cornflowerblue;
+}
+
+#pixel-board {
+  background-color: coral;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 45px;
+}
+
+.pixel {
+  background-color: white;
+  border: black solid 1px;
+  display: inline;
+  padding: 20px 28px;
+}
