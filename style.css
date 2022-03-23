@@ -8,8 +8,8 @@ body {
 
 #color-palette {
   background-color: chartreuse;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 5px;
 }
 
 .color {
@@ -17,21 +17,22 @@ body {
   border: black solid 1px;
   height: 40px;
   width: 40px;
+  margin-top: -5px;
 }
 
-#cor1 {
+.cor1 {
   background-color: black;
 }
 
-#cor2 {
+.cor2 {
   background-color: rgb(255, 243, 55);
 }
 
-#cor3 {
+.cor3 {
   background-color: hotpink;
 }
 
-#cor4 {
+.cor4 {
   background-color: cornflowerblue;
 }
 
