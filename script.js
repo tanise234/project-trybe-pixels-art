@@ -14,7 +14,6 @@ function createPixel(altura, largura) {
     for (let j = 0; j < largura; j += 1) {
       pix = document.createElement('div');
       pix.classList = 'pixel';
-      pix.backgroundColor = 'white';
       pix.addEventListener('click', aplicaCor);
       document.getElementById('pixel-board').appendChild(pix);
     }
@@ -34,4 +33,16 @@ function selecionaCor(event) {
 function aplicaCor(event) {
   let classeDaCor = document.querySelector('.selected').classList;
   event.target.classList = classeDaCor;
+  event.target.classList.remove('selected');
+}
+
+// botão limpar
+let botao = document.getElementById('clear-board');
+botao.addEventListener('click', limpaQuadroDePixels);
+
+function limpaQuadroDePixels() {
+  let pixels = document.querySelectorAll('section div');
+  for (p in pixels) {
+      pixels[p].classList = 'pixel';
+  }
 }

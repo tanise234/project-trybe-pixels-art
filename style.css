@@ -22,18 +22,22 @@ body {
 
 .cor1 {
   background-color: black;
+  color: black;
 }
 
 .cor2 {
   background-color: rgb(255, 243, 55);
+  color: rgb(255, 243, 55);
 }
 
 .cor3 {
   background-color: hotpink;
+  color: hotpink;
 }
 
 .cor4 {
   background-color: cornflowerblue;
+  color: cornflowerblue;
 }
 
 #pixel-board {
