@@ -1,11 +1,11 @@
-// requisito 6 - iniciar com a classe selected na cor1
-let corSelecionada = document.querySelector('.cor1');
-corSelecionada.classList.add('selected');
+// // requisito 6 - iniciar com a classe selected na cor1
+// let corSelecionada = document.querySelector('.cor1');
+// corSelecionada.classList.add('selected');
 
 // adicionar eventListener na paleta de cores
 let cores = document.querySelectorAll('.color');
-for (cor of cores) {
-  cor.addEventListener('click', selecionaCor);
+for (let i = 0; i < cores.length; i += 1) {
+  cores[i].addEventListener('click', selecionaCor);
 }
 
 let pix;
