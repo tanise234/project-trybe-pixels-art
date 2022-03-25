@@ -1,13 +1,16 @@
-// // requisito 6 - iniciar com a classe selected na cor1
-// let corSelecionada = document.querySelector('.cor1');
-// corSelecionada.classList.add('selected');
-
 // adicionar eventListener na paleta de cores
 let cores = document.querySelectorAll('.color');
 for (let i = 0; i < cores.length; i += 1) {
   cores[i].addEventListener('click', selecionaCor);
 }
 
+// selecionar cor da paleta
+function selecionaCor(event) {
+  document.querySelector('.selected').classList.remove('selected');
+  event.target.classList.add('selected');
+}
+
+// criar quadro de pixels
 let pix;
 function createPixel(altura, largura) {
   for (let i = 0; i < altura; i += 1) {
@@ -23,17 +26,12 @@ function createPixel(altura, largura) {
 }
 createPixel(5, 5);
 
-// selecionar cor da paleta
-function selecionaCor(event) {
-  document.querySelector('.selected').classList.remove('selected');
-  event.target.classList.add('selected');
-}
-
 // aplicar cor no pixel-board
 function aplicaCor(event) {
   let classeDaCor = document.querySelector('.selected').classList;
   event.target.classList = classeDaCor;
   event.target.classList.remove('selected');
+  event.target.classList.add('pixel');
 }
 
 // botão limpar

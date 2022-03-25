@@ -12,6 +12,15 @@ body {
   padding-bottom: 5px;
 }
 
+.pixel {
+  display: inline-block;
+  background-color: white;
+  border: black solid 1px;
+  height: 40px;
+  width: 40px;
+  margin-top: -5px;
+}
+
 .color {
   display: inline-block;
   border: black solid 1px;
@@ -45,13 +54,4 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 40px;
-}
-
-.pixel {
-  display: inline-block;
-  background-color: white;
-  border: black solid 1px;
-  height: 40px;
-  width: 40px;
-  margin-top: -5px;
 }
