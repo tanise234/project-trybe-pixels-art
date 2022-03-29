@@ -35,12 +35,37 @@ function aplicaCor(event) {
 }
 
 // botão limpar
-let botao = document.getElementById('clear-board');
-botao.addEventListener('click', limpaQuadroDePixels);
-
 function limpaQuadroDePixels() {
   let pixels = document.querySelectorAll('section div');
   for (p in pixels) {
-      pixels[p].classList = 'pixel';
+    pixels[p].classList = 'pixel';
   }
 }
+
+const botaoLimpar = document.getElementById('clear-board');
+botaoLimpar.addEventListener('click', limpaQuadroDePixels);
+
+// botão mudar tamanho do quadro
+function mudarTamanho() {
+  let n = document.getElementById('board-size').value;
+  if (n == false){
+    alert('Board inválido!');
+  }
+  let pixels = document.querySelectorAll('section div');
+  if (pixels.length !== 0) {
+    for (i = 0; i < pixels.length; i += 1) {
+      pixels[i].parentNode.removeChild(pixels[i]);
+    }
+  }
+
+  if (n >= 0 && n < 5) {
+    createPixel(5, 5);
+  } else if (n > 50) {
+    createPixel(50, 50);
+  } else {
+    createPixel(n, n);
+  }
+}
+
+const botaoTamanho = document.getElementById('generate-board');
+botaoTamanho.addEventListener('click', mudarTamanho);
